@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Fashion Deals</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* Light grey background for a clean look */
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #1c1e21; /* Dark background for navigation */
+            color: white;
+            padding: 20px 0;
+            font-size: 1.2rem;
+        }
+
+        .navbar .logo {
+            width: 150px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .search-input {
+            width: 70%;
+            padding: 10px;
+            border: 2px solid #ced4da;
+            border-radius: 30px;
+            background-color: #f1f3f5;
+        }
+
+        .search-button {
+            margin-left: 10px;
+            background-color: #ff6f61;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Right Navigation Items */
+        .right-section .nav-item {
+            margin: 0 15px;
+            color: #ff6f61;
+            font-weight: bold;
+        }
+
+        /* Hero Section - Full Screen Banner */
+        .hero-section {
+            background: url('hero-banner.jpg') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            flex-direction: column;
+        }
+
+        .hero-section h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .hero-section p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .hero-section .cta-button {
+            background-color: #ff6f61;
+            padding: 15px 40px;
+            border-radius: 30px;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Carousel Styles */
+        .container-box {
+            margin: 50px 0;
+        }
+
+        .carousel-inner .row {
+            display: flex;
+            justify-content: center;
+        }
+
+        .custom-box {
+            background-color: white;
+            border: 1px solid #dee2e6;
+            border-radius: 20px;
+            width: 230px;
+            height: 280px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .custom-box:hover {
+            transform: scale(1.05); /* Slight scale effect on hover */
+        }
+
+        /* Footer Styling */
+        .footer-section {
+            background-color: #1c1e21;
+            color: white;
+            padding: 40px 0;
+        }
+
+        .footer-section h5 {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .footer-section ul {
+            padding-left: 0;
+        }
+
+        .footer-section ul li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            background-color: #111;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            color: #ffffff;
+            font-size: 0.9rem;
+        }
+
+        /* Full Page Layout Flexbox Fix */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .main-content {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Primary Navbar -->
+    <div class="navbar d-flex align-items-center justify-content-around">
+        <div class="left-section d-flex align-items-center">
+            <!-- Logo -->
+            <img src="logo.jpeg" alt="Logo" class="logo">
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search fashion deals...">
+            <button class="search-button">Search</button>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section d-flex align-items-center">
+            <div class="nav-item">Account & Lists</div>
+            <div class="nav-item">Returns & Orders</div>
+            <div class="cart-icon">🛒 Cart</div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Discover Latest Fashion Deals</h1>
+        <p>Unbeatable Prices. Exclusive Offers. Trending Styles.</p>
+        <a href="#" class="cta-button">Shop Now</a>
+    </section>
+
+    <!-- First Sliding Carousel Bar -->
+    <div class="container-fluid container-box">
+        <div id="carouselExample1" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="custom-box">Deal 1</div>
+                        <div class="custom-box">Deal 2</div>
+                        <div class="custom-box">Deal 3</div>
+                        <div class="custom-box">Deal 4</div>
+                        <div class="custom-box">Deal 5</div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="custom-box">Deal 6</div>
+                        <div class="custom-box">Deal 7</div>
+                        <div class="custom-box">Deal 8</div>
+                        <div class="custom-box">Deal 9</div>
+                        <div class="custom-box">Deal 10</div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Get to Know Us</h5>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press Releases</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Connect with Us</h5>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Make Money with Us</h5>
+                    <ul>
+                        <li><a href="#">Sell on Our Platform</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Help</h5>
+                    <ul>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Big Fashion Deals. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>      
+</body>
+</html>

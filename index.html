@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Carousel Bars</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styless.css">
+    <style>
+        /* Style for the dropdown */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            right: 0;
+            padding: 15px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 10px;
+            width: 250px;
+        }
+        .dropdown-menu.show {
+            display: block;
+        }
+
+        .form-toggle {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .signup-form {
+            display: none;
+        }
+
+        .form-control {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Primary Navbar -->
+    <div class="navbar">
+        <div class="left-section">
+            <!-- Logo -->
+            <img src="IMG-20240924-WA0007-removebg-preview.png" class="logo" alt="Logo">
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search">
+                <button class="search-button">🔍</button>
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav-item">Account & Lists</div>
+            <div class="nav-item">Returns & Orders</div>
+            <div class="cart-icon">🛒 Cart</div>
+            
+            <!-- Login/Sign Up Dropdown -->
+            <div class="login-signup">
+                <div class="login-signup-icon">👤 Login / Sign Up</div>
+                <div class="dropdown-menu">
+                    <div class="form-toggle">
+                        <button id="login-btn" class="btn btn-primary">Login</button>
+                        <button id="signup-btn" class="btn btn-secondary">Sign Up</button>
+                    </div>
+                    <div class="login-form" id="login-form">
+                        <h5>Login</h5>
+                        <input type="text" placeholder="Username" class="form-control">
+                        <input type="password" placeholder="Password" class="form-control">
+                        <button class="btn btn-primary">Login</button>
+                    </div>
+                    <div class="signup-form" id="signup-form">
+                        <h5>Sign Up</h5>
+                        <input type="text" placeholder="Username" class="form-control">
+                        <input type="password" placeholder="Password" class="form-control">
+                        <input type="email" placeholder="Email" class="form-control">
+                        <input type="tel" placeholder="Phone No" class="form-control">
+                        <input type="text" placeholder="Address" class="form-control">
+                        <button class="btn btn-success">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Secondary Navbar -->
+    <div class="secondary-navbar">
+        <a href="#">All</a>
+        <a href="#">Fresh</a>
+        <a href="#">Today's Deals</a>
+        <a href="#">Sell</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Coupons</a>
+        <a href="#">Gift Ideas</a>
+        <a href="#">Buy Again</a>
+        <a href="#">Browsing History</a>
+    </div>
+
+    <!-- Sliding Bar 1 -->
+    <div class="allign">
+        <div class="carousel-title">
+            <h1>Top Deals</h1>
+            
+        </div>
+        <div class="container-fluid container-box">
+            <div id="carouselExample1" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="custom-box">
+                                <img src="Screenshot_4.png" alt="Item 1" class="box-image">
+                            </div>
+                            <div class="custom-box">
+                                <img src="Screenshot_6.png" alt="Item 1" class="box-image">
+                            </div>
+                            <div class="custom-box">
+                                <img src="Screenshot_3.png" alt="Item 1" class="box-image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="custom-box">
+                                <img src="Screenshot_7.png" alt="Item 1" class="box-image">
+                            </div>
+                            <div class="custom-box">
+                                <img src="Screenshot_8.png" alt="Item 1" class="box-image">
+                            </div>
+                            <div class="custom-box">
+                                <img src="Screenshot_9.png" alt="Item 1" class="box-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExample1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExample1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Sliding Bar 2 -->
+        <div class="carousel-title">
+            <h1>Top Deals</h1>
+            
+        </div>
+        <div class="container-fluid container-box">
+            <div id="carouselExample2" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="custom-box">Item 11</div>
+                            <div class="custom-box">Item 12</div>
+                            <div class="custom-box">Item 13</div>
+                           
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="custom-box">Item 16</div>
+                            <div class="custom-box">Item 17</div>
+                            <div class="custom-box">Item 18</div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExample2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExample2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Sliding Bar 3 -->
+        <div class="carousel-title">
+            <h1>Top Deals</h1>
+            
+        </div>
+        <div class="container-fluid container-box">
+            <div id="carouselExample3" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="custom-box">
+                                
+                            </div>
+                            <div class="custom-box">Item 22</div>
+                            <div class="custom-box">Item 23</div>
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="custom-box">Item 26</div>
+                            <div class="custom-box">Item 27</div>
+                            <div class="custom-box">Item 28</div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExample3" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExample3" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>Get to Know Us</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Connect with Us</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Make Money with Us</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Affiliate Program</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Help</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Customer Service</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container text-center">
+                    <p>© 2024 Discount Discovery. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Chatbot Container -->
+<div class="chatbot-container" id="chatbot">
+    <div class="chat-header">
+        <h4>Chat with Us</h4>
+        <button class="close-chat" onclick="toggleChat()">×</button>
+    </div>
+    <div class="chat-body" id="chatBody">
+        <div class="chat-bubble bot">Hi! How can I help you today?</div>
+    </div>
+    <div class="chat-input-container">
+        <input type="text" id="userInput" placeholder="Type your question..." onkeypress="handleKeyPress(event)">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<!-- Chatbot Toggle Button -->
+<button class="chat-toggle-button" onclick="toggleChat()">💬 Chat</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>      
+    <script>
+        document.querySelector('.login-signup-icon').addEventListener('click', function() {
+            document.querySelector('.dropdown-menu').classList.toggle('show');
+        });
+
+        function toggleForms(formType) {
+            if (formType === 'login') {
+                document.getElementById('login-form').style.display = 'block';
+                document.getElementById('signup-form').style.display = 'none';
+            } else {
+                document.getElementById('login-form').style.display = 'none';
+                document.getElementById('signup-form').style.display = 'block';
+            }
+        }
+
+        // Event listeners for buttons to toggle between login and sign up
+        document.getElementById('login-btn').addEventListener('click', () => toggleForms('login'));
+        document.getElementById('signup-btn').addEventListener('click', () => toggleForms('signup'));
+      
+  // Toggle Chatbox visibility
+function toggleChat() {
+    const chatbot = document.getElementById('chatbot');
+    chatbot.style.display = chatbot.style.display === 'none' || chatbot.style.display === '' ? 'flex' : 'none';
+}
+
+// Handle Enter key press in the input field
+function handleKeyPress(event) {
+    if (event.key === "Enter") {
+        sendMessage();
+    }
+}
+
+// Send user message and get bot response
+function sendMessage() {
+    const userInput = document.getElementById('userInput');
+    const message = userInput.value.trim();
+    if (message === '') return;
+
+    // Display user message
+    appendMessage('user', message);
+
+    // Clear input field
+    userInput.value = '';
+
+    // Generate bot response
+    getBotResponse(message);
+}
+
+// Append message to chat body
+function appendMessage(sender, text) {
+    const chatBody = document.getElementById('chatBody');
+    const messageElement = document.createElement('div');
+    messageElement.classList.add('chat-bubble', sender);
+    messageElement.textContent = text;
+    chatBody.appendChild(messageElement);
+    chatBody.scrollTop = chatBody.scrollHeight;
+}
+
+// Generate bot response based on user message
+function getBotResponse(message) {
+    let response = '';
+    const lowerCaseMessage = message.toLowerCase();
+
+    // Basic questions
+    if (lowerCaseMessage.includes('hello') || lowerCaseMessage.includes('hi')) {
+        response = 'Hello! How can I assist you today?';
+    } else if (lowerCaseMessage.includes('help')) {
+        response = 'Sure! What do you need help with?';
+    } else if (lowerCaseMessage.includes('categories')) {
+        response = 'We have categories like Electronics, Fashion, Groceries, and Books. What are you looking for?';
+    } else if (lowerCaseMessage.includes('electronics')) {
+        response = 'We have Phones, Laptops, and Accessories. Would you like to see them?';
+    } else if (lowerCaseMessage.includes('fashion')) {
+        response = 'We offer Men’s, Women’s, and Kids’ fashion. What are you looking for?';
+    } else {
+        response = 'Sorry, I didn’t understand that. Can you please rephrase?';
+    }
+
+    // Display bot response
+    setTimeout(() => {
+        appendMessage('bot', response);
+    }, 500);
+}
+    
+    </script>
+</body>
+</html>
